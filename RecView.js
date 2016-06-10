@@ -5,30 +5,24 @@
  */
 
 import React, { Component } from 'react';
-
-import ScrollableTabView from 'react-native-scrollable-tab-view';
-
+import TabNavigator from 'react-native-tab-navigator';
 import {
   AppRegistry,
-  BackAndroid,
   StyleSheet,
   Text,
+  Image,
   View,
-  Image
 } from 'react-native';
-
 var HomeView=require('./HomeView');
-var ProView=require('./ProView');
-var RecView=require('./RecView');
 
-class juhui extends Component {
+class RecView extends Component {
   render() {
     return (
-        <ScrollableTabView>
-           <HomeView tabLabel="React" />
-           <ProView tabLabel="Flow" />
-           <RecView tabLabel="Jest" />
-         </ScrollableTabView>
+      <View style={styles.container}>
+        <Text style={styles.welcome}>
+        聚会路线图
+        </Text>
+      </View>
     );
   }
 }
@@ -52,4 +46,4 @@ const styles = StyleSheet.create({
   },
 });
 
-AppRegistry.registerComponent('juhui', () => juhui);
+module.exports = RecView;

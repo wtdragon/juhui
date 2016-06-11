@@ -24,9 +24,9 @@ class juhui extends Component {
   render() {
     return (
       <ScrollableTabView>
-         <HomeView tabLabel="React" />
-         <ProView tabLabel="Flow" />
-         <RecView tabLabel="Jest" />
+         <HomeView tabLabel="聚会" />
+         <ProView tabLabel="回忆" />
+         <RecView tabLabel="地点" />
        </ScrollableTabView>
     );
   }
